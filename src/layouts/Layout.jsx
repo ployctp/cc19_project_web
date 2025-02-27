@@ -1,12 +1,14 @@
 import React from 'react'
 import { Outlet } from 'react-router'
+import MainNav from '../components/mainNav'
 
 const Layout = () => {
   return (
     <div>
-    <h1>Main Nav</h1>
-    <hr />
-    <Outlet />
+    <MainNav />
+    <main>
+      <Outlet />
+    </main>
     </div>
   )
 }
