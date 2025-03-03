@@ -2,7 +2,8 @@ import React from 'react'
 
 const HeaderAdmin = () => {
   return (
-    <div>HeaderAdmin</div>
+    <header className='bg-slate-100 h-16 flex items-center px-7'>
+      HeaderAdmin</header>
   )
 }
 
