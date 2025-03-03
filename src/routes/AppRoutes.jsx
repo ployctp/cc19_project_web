@@ -34,7 +34,7 @@ const router = createBrowserRouter([
   },
   {
     path:'/admin',
-    element: <ProtectRouteAdmin element={LayoutAdmin } />,
+    element: <ProtectRouteAdmin element={<LayoutAdmin />} />,
     children:[
       {index: true, element:<Dashboard />},
       {path:'category',element:<Category />},

@@ -14,6 +14,8 @@ const ProtectRouteAdmin = ({ element }) => {
         currentAdmin(token)
         .then((res)=>setOk(true))
         .catch((err)=>setOk(false))
+       
+
       }
   },[])
 
