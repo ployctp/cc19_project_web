@@ -35,32 +35,35 @@ const Regiter = () => {
   }
 
   return (
-    <div>
-      Regiter
-      <form onSubmit={handleSubmit}>
-        Email
+    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+      <div className="bg-white p-8 rounded-lg shadow-lg w-96">
+        <h2 className="text-2xl font-semibold text-center mb-6">Register</h2>
+      <form onSubmit={handleSubmit} className="space-y-4">
+      <label className="block text-gray-700">Email</label>
         <input
-          className="border"
+          className="w-full px-3 py-2 border rounded-lg "
           onChange={handleOnChange}
           name="email"
           type="email"
         />
-        Password
+        <label className="block text-gray-700">Password</label>
         <input
-          className="border"
+          className="w-full px-3 py-2 border rounded-lg "
           onChange={handleOnChange}
           name="password"
           type="text"
         />
-        Confirm Password
+        <label className="block text-gray-700">Comfirm Password</label>
         <input
-          className="border"
+          className="w-full px-3 py-2 border rounded-lg "
           onChange={handleOnChange}
           name="confirmPassword"
           type="text"
         />
-        <button className="bg-slate-950 rounded text-white">Register</button>
+        <button className="bg-slate-950 w-full  text-white py-2 rounded-lg hover:bg-slate-800 transition">Register</button>
       </form>
+
+      </div>
     </div>
   );
 };

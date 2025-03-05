@@ -9,22 +9,16 @@ import { toast } from "react-toastify";
 
 const FromCaterory = () => {
   const token = useEcomStore((state) => state.token);
-  const [name, setName] = useState("");
+  const [name, setName] = useState("")
+  // const [categories, setCategories] = useState([]);
 
-  const [categories, setCategories] = useState([]);
-
+  const categories = useEcomStore((state)=>state.categories)
+  const getCategory = useEcomStore((state)=>state.getCategory)
   useEffect(() => {
     getCategory(token);
   }, []);
 
-  const getCategory = async (token) => {
-    try {
-      const res = await listCategory(token);
-      setCategories(res.data);
-    } catch (err) {
-      console.log(err);
-    }
-  };
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
