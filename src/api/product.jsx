@@ -26,3 +26,12 @@ export const createProduct = async (token, form) => {
       },
     });
   };
+  export const removeFiles = async (token, public_id) => {
+    return  axios.post("http://localhost:5001/api/removeimages", {
+      public_id
+    }, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+  };

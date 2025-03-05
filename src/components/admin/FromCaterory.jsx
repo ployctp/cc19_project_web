@@ -47,7 +47,7 @@ const FromCaterory = () => {
   };
 
   return (
-    <div className="container mx-auto p-4 bg-white shadow-md flex items-center justify-center flex-col gap-3 rounded-lg">
+    <div className="container mx-auto p-4 bg-white shadow-md flex items-center justify-center flex-col gap-3 rounded-lg w-fit">
       <h1 className="text-2xl font-bold text-center  mb-6 text-slate-950">
         Category Management
       </h1>

@@ -49,43 +49,48 @@ const FormProduct = () => {
   };
 
   return (
-    <div className="container mx-auto p-6 bg-white shadow-md flex items-center justify-center flex-col gap-5 rounded-lg w-lg">
+    <div className="container mx-auto p-6 bg-white shadow-md flex items-center justify-center flex-col gap-2 rounded-lg w-fit">
       <form onSubmit={handleSubmit} className="w-full">
-        <h1 className="text-2xl font-semibold text-center mb-6 text-slate-950 ">
+        <h1 className="text-xl font-semibold text-center mb-1 text-slate-950 ">
           Add Product Information
         </h1>
+        <label className="block  text-gray-700">Name</label>
         <input
-          className="border h-7 rounded w-full p-3 mb-4 bg-slate-100 text-slate-950 "
+          className="border h-7 rounded w-full p-3 mb-2 bg-slate-100 text-slate-950 "
           value={form.title}
           onChange={handleOnchange}
           placehoder="Title"
           name="title"
         />
+        <label className="block  text-gray-700">Description</label>
         <input
-          className="border h-7 rounded w-full p-3 mb-4 bg-slate-100 text-slate-950 "
+          className="border h-7 rounded w-full p-3 mb-2 bg-slate-100 text-slate-950 "
           value={form.description}
           onChange={handleOnchange}
           placehoder="Description"
           name="description"
         />
+        <label className="block  text-gray-700">Price</label>
         <input
           type="number"
-          className="border h-7 rounded w-full p-3 mb-4 bg-slate-100 text-slate-950 "
+          className="border h-7 rounded w-full p-3 mb-2 bg-slate-100 text-slate-950 "
           value={form.price}
           onChange={handleOnchange}
           placehoder="price"
           name="price"
         />
+        <label className="block  text-gray-700">Quantity</label>
         <input
           type="number"
-          className="border h-7 rounded w-full p-3 mb-4 bg-slate-100 text-slate-950 "
+          className="border h-7 rounded w-full p-3 mb-2 bg-slate-100 text-slate-950 "
           value={form.quantity}
           onChange={handleOnchange}
           placehoder="quantity"
           name="quantity"
         />
+        <label className="block  text-gray-700">Category</label>
         <select
-          className="border h-7 rounded w-full p-3 mb-4 bg-slate-100 text-slate-950 "
+          className="border h-7 rounded w-full p-3 mb-2 bg-slate-100 text-slate-950 "
           name="categoryId"
           onChange={handleOnchange}
           required
@@ -112,11 +117,11 @@ const FormProduct = () => {
           Add Product
         </button>
         <hr />
-        <div className="overflow-y-auto max-h-96 h-96 border rounded-lg shadow-md">
+        <div className="overflow-y-auto max-h-20 h-96 border rounded-lg shadow-md">
         
   <table className="table table-xs w-full">
     <thead>
-      <tr className="text-slate-900">
+      <tr className="text-slate-900 ">
         <th scope="col">Number</th> 
         <th scope="col">Name</th> 
         <th scope="col">Description</th> 
