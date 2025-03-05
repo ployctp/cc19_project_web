@@ -10,7 +10,13 @@ const MainNav = () => {
           {/* Logo  */}
           <div className="flex items-center gap-3">
             <div > 
-            <Link to="/" className="text-2xl font-semibold text-black">LOGO</Link>
+            <Link to="/">
+        <img 
+          src="../../src/assets/logo.png" 
+          alt="Logo" 
+          className="h-10  w-30" 
+        />
+      </Link>
             </div>
           </div>
           
@@ -24,7 +30,7 @@ const MainNav = () => {
         
        
         <div className="flex items-center gap-6">
-          <Link to="/register" className="hover:text-gray-500">Register</Link>
+          <Link to="/register" className=" text-gray-800 hover:text-gray-500">Register</Link>
           <Link to="/login" className="px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition">Login</Link>
         </div>
       </div>

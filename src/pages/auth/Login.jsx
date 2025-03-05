@@ -47,18 +47,18 @@ const login = () => {
     <div>
       <div className="flex items-center justify-center min-h-screen bg-gray-100">
         <div className="bg-white p-8 rounded-lg shadow-lg w-96">
-          <h2 className="text-2xl font-semibold text-center mb-6">Login</h2>
+          <h2 className="text-slate-950 text-2xl font-semibold text-center mb-6">Login</h2>
           <form onSubmit={handleSubmit} className="space-y-4">
-          <label className="block text-gray-700">Email</label>
+          <label className="block  text-gray-700">Email</label>
             <input
-              className="w-full px-3 py-2 border rounded-lg "
+              className="w-full px-3 py-2 border rounded-lg bg-slate-100 "
               onChange={handleOnChange}
               name="email"
               type="email"
             />
-             <label className="block text-gray-700">Password</label>
+             <label className="block  text-gray-700">Password</label>
             <input
-              className="w-full px-3 py-2 border rounded-lg "
+              className="w-full bg-slate-100 px-3 py-2 border rounded-lg "
               onChange={handleOnChange}
               name="password"
               type="text"
