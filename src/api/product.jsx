@@ -16,3 +16,13 @@ export const createProduct = async (token, form) => {
       },
     });
   };
+
+  export const uploadFiles = async (token, form) => {
+    return  axios.post("http://localhost:5001/api/images", {
+      image: form
+    }, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+  };

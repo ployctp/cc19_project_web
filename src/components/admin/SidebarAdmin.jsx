@@ -10,8 +10,8 @@ import {
 
 const SidebarAdmin = () => {
   return (
-    <div className="bg-[#121417] w-64 text-white flex flex-col h-screen ">
-      <div className="h-24 bg-[#121417  ] flex items-center justify-center text-2xl font-bold">
+    <div className="bg-[#121417] w-64 text-white flex flex-col h-full overflow-y-auto  ">
+      <div className="h-24 bg-[#121417] flex items-center justify-center text-2xl font-bold">
         Admin Panel
       </div>
 
