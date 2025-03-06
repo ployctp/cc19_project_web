@@ -41,21 +41,21 @@ const Regiter = () => {
       <form onSubmit={handleSubmit} className="space-y-4">
       <label className="block text-gray-700">Email</label>
         <input
-          className="w-full px-3 py-2 border rounded-lg "
+          className="w-full px-3 py-2 border rounded-lg bg-gray-100"
           onChange={handleOnChange}
           name="email"
           type="email"
         />
         <label className="block text-gray-700">Password</label>
         <input
-          className="w-full px-3 py-2 border rounded-lg "
+          className="w-full px-3 py-2 border rounded-lg bg-gray-100 "
           onChange={handleOnChange}
           name="password"
           type="text"
         />
         <label className="block text-gray-700">Comfirm Password</label>
         <input
-          className="w-full px-3 py-2 border rounded-lg "
+          className="w-full px-3 py-2 border rounded-lg bg-gray-100 "
           onChange={handleOnChange}
           name="confirmPassword"
           type="text"
